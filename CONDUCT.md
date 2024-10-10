@@ -95,7 +95,7 @@ Leaders will follow these Community Impact Guidelines in determining the consequ
 ## Signatures
 
 Matt - ![Signature](src/IMG_7317.JPG)
-Dajuhan - ![Signature](src/IMG_7319.JPG)
+David - ![Signature](src/IMG_7319.JPG)
 Jillian - ![Signature](src/IMG_7320.JPG)
 Zoe - ![Signature](src/signature-Zoe-Chesnais.JPG)
 Choi - ![Signature](src/IMG_7318.JPG)
