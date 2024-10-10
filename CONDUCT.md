@@ -102,5 +102,5 @@ Choi - ![Signature](src/IMG_7318.JPG)
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, and includes additional guidelines specific to 305Soft team expectations.
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, and includes additional guidelines specific to team expectations.
 
