@@ -62,7 +62,7 @@ Feedback will be given and received respectfully. Constructive criticism should 
 
 Team leaders are responsible for clarifying and enforcing standards of acceptable behavior. They will take appropriate and fair action in response to behavior that they deem inappropriate, threatening, offensive, or harmful. This can include editing or removing contributions that do not align with this Code of Conduct.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the team leads via [INSERT CONTACT METHOD]. All complaints will be reviewed and investigated promptly and fairly. Leaders are obligated to respect the privacy and security of the reporter of any incident.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the team leads via email or discord. All complaints will be reviewed and investigated promptly and fairly. Leaders are obligated to respect the privacy and security of the reporter of any incident.
 
 ## Enforcement Guidelines
 
