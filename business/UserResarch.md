@@ -33,3 +33,13 @@ When asked about what type of diet people are on, 90.9% of people were omnivorou
 We plan to make our app have a more broader audience instead of mostly focusing on people with diets
 
 
+
+## Observation : Time to prepare meals
+### Observation Statement:
+The majority had said they spend 30 to 60 minutes for preparing meals and 11 had said less than 30 minutes and 9 had said more than 1 hour.
+
+### Supporting Data:
+45.8% had responded that they spend 30 to 60 minutes preparing for meals. 
+
+### Team Action (if any):
+Would have to make the app suit the time constraints that users have when preparing meals. 
