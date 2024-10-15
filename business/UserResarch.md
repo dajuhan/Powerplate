@@ -18,3 +18,18 @@ When asked “What feature is most important to you in an app”, only 4.2% of u
 
 **Team Action (if any)**:  
 The team should not implement a macronutrient-tracking feature, and instead focus on the other features that more users selected as being important to them.
+
+
+
+### Observation: Diet Restrictions: 
+
+**Observation Statement**:
+I noticed that most people don't have diet restrictions.
+
+**Supporting Data**:
+When asked about what type of diet people are on, 90.9% of people were omnivorous. 
+
+**Tema Action (if any)**:
+We plan to make our app have a more broader audience instead of mostly focusing on people with diets
+
+
