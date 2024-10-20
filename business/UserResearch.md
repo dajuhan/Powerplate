@@ -32,8 +32,6 @@ When asked about what type of diet people are on, 90.9% of people were omnivorou
 **Tema Action (if any)**:
 We plan to make our app have a more broader audience instead of mostly focusing on people with diets
 
-
-
 ## Observation : Time to prepare meals
 ### Observation Statement:
 The majority had said they spend 30 to 60 minutes for preparing meals and 11 had said less than 30 minutes and 9 had said more than 1 hour.
@@ -43,3 +41,16 @@ The majority had said they spend 30 to 60 minutes for preparing meals and 11 had
 
 ### Team Action (if any):
 Would have to make the app suit the time constraints that users have when preparing meals. 
+
+
+
+## Observation: Cooking Skill Levels
+
+### Observation Statement:
+Many of our survey respondents have moderate cooking skills on a scale of 1-5, with 1 being poor and 5 being excellent.
+
+### Supporting Data:
+Out of our 24 respondents, 12 selected 3 for “On a scale of 1-5, how would you rate your cooking ability?”
+
+### Team Action (if any):
+We plan to implement a filter on one of the main screens that suggests recipes based on the level of difficulty of the meal.
