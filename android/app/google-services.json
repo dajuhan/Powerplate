@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143219694394",
+    "project_id": "powerplate-3aaec",
+    "storage_bucket": "powerplate-3aaec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143219694394:android:43d46ace2d4c8fe6d60e03",
+        "android_client_info": {
+          "package_name": "com.mycompany.powerplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXfYrtIfwfkL0B8xRjz46gU5gpq8DM1vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
