@@ -12,5 +12,7 @@ Metric 2 -
      - **How to collect**: Implement a Firebase Analytics event to track when a user generates a recipe for the first time, helping measure initial user success with this feature.
 
 
-### Metric 3: CTR on Push Notifications
-- **Task:** Track the click-through rate on push notifications by logging when users open specific notifications. Use Firebase Analytics to monitor interaction with critical notifications.
+### Metric 3: CTR on logging meals
+- **Task:** Track the click-through rate on logging in meals, will help us understand how many times users log their meals
+
+
