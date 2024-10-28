@@ -14,4 +14,3 @@ Metric 2 -
 
 ### Metric 3: CTR on Push Notifications
 - **Task:** Track the click-through rate on push notifications by logging when users open specific notifications. Use Firebase Analytics to monitor interaction with critical notifications.
-- **Label:** metrics
