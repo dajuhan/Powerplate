@@ -1,6 +1,8 @@
 https://docs.google.com/presentation/d/1eVf-o1HR4YoCYz2m-DOBT_evhTzHgA1_Qoye76FJsR8/edit?usp=sharing
 
-Metric 1 - We are going to cxollect data for Daily active users by tracking how many times a different user logs in on a day to day basis
+### Metric 1: Daily Active Users
+
+We will track the number of unique user logins each day to measure daily active users.
 
 Metric 2 -
 **Task Success (First Goal Entry, First Meal Logged, First Recipe Generated)**:
