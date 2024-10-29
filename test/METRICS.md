@@ -1,6 +1,6 @@
 https://docs.google.com/presentation/d/1eVf-o1HR4YoCYz2m-DOBT_evhTzHgA1_Qoye76FJsR8/edit?usp=sharing
 
-Metric 1 - We are going to cxollect data for Daily actiove users by tracking how many times a different user logs in on a day to day basis
+Metric 1 - We are going to cxollect data for Daily active users by tracking how many times a different user logs in on a day to day basis
 
 Metric 2 -
 **Task Success (First Goal Entry, First Meal Logged, First Recipe Generated)**:
@@ -14,5 +14,9 @@ Metric 2 -
 
 ### Metric 3: CTR on logging meals
 - **Task:** Track the click-through rate on logging in meals, will help us understand how many times users log their meals
+
+### Metric 4: Onboarding Completion Rate
+- **Task:** Measure the percentage of new users who complete the onboarding process on their first day to ensure they understand the app’s core features.
+- **How to collect**: Set up a Firebase Analytics event to track when users finish each step of the onboarding process (e.g., account setup, tutorial finish). This immediate data will help assess users' early engagement and understanding of the app's features.
 
 
