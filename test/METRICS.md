@@ -22,3 +22,6 @@ Metric 2 -
 - **How to collect**: Set up a Firebase Analytics event to track when users finish each step of the onboarding process (e.g., account setup, tutorial finish). This immediate data will help assess users' early engagement and understanding of the app's features.
 
 
+### Metric 5: Net Promoter Score
+- **Task:** Measure with a survey on average how likely users are to recommend the app to others on a scale of 1-10.
+- **How to collect**: Create a NPS survey screen that the user is redirected to after logging a meal.  When the user selects a score 1-10, store the score in their user document.  Use a cloud function to total the score of all of the users, then divide by the total number of users in order to find the average score.
