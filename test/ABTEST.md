@@ -63,3 +63,49 @@ For this variation, we would implement a basic design with filled progress bars 
 ---
 
 This A/B test will help determine if progress bars improve users’ comprehension of their daily goals and if this visual representation motivates them to log meals more frequently, ultimately improving engagement with Powerplate's core tracking functionality.
+
+
+
+
+### A/B Test Name Number 3:
+**"AI Recipe Personalization: Ingredient-Based vs. Goal-Oriented Suggestions"**
+
+### User Story Number:
+**US5 - Recipe Generation**
+
+### Metrics:
+- **HEART Metrics:**  
+  - **Engagement:** Number of recipe suggestions viewed, saved, or edited.
+  - **Adoption:** Percentage of new users interacting with AI-generated recipes within their first week.
+  - **Retention:** Frequency of return visits by users who engage with AI recipes.
+  - **Task Success:** Completion rate of suggested recipes
+.
+### Hypothesis:
+Providing personalized AI-generated recipes based on nutritional goals and dietary restrictions will lead to higher engagement and completion rates compared to recipes based only on the current ingredients logged. Users are more likely to engage with recipes that align closely with their specific dietary needs and goals, such as calorie targets, macronutrient ratios, or dietary preferences (e.g., low-carb, vegan).
+
+### Problem Statement:
+The current AI recipe suggestion system may lack sufficient personalization, offering suggestions based only on ingredients logged. This approach might not be engaging enough for users with specific nutrition goals or dietary restrictions, which could lead to lower interaction and completion rates. Our goal is to increase the relevance of recipe suggestions to encourage more users to explore and complete AI-generated recipes.
+
+### Experiment Setup:
+- **Audience:**  
+   - 50% of users will receive Version A (Ingredient-Based Suggestions) and the other 50% will experience Version B (Goal-Oriented Suggestions).
+   - The experiment will run for three weeks to monitor patterns in recipe engagement and completion rates.
+- **Tracking with Firebase Analytics:**  
+   - **Event Tracking:**
+      - **Recipe Viewed Event:** Tracks each time an AI recipe is viewed.
+      - **Recipe Saved Event:** Tracks when a recipe is saved to the user’s profile.
+      - **Recipe Edited Event:** Tracks modifications made to AI-suggested recipes.
+      - **Recipe Completed Event:** Tracks when a user logs a suggested recipe as completed.
+   - **Funnel Tracking:** To monitor the flow from recipe view to completion, especially for recipes that align with nutritional goals.
+
+### Variations:
+- **Version A (Ingredient-Based Suggestions):** Shows AI-generated recipes based solely on the ingredients currently logged in the user’s meal history, with no consideration of broader dietary goals or restrictions.
+   - **Design Work:** The suggested recipes are displayed directly in the user’s meal log, with ingredients pre-filled based on recent logs.
+   - **Mockup:** Displays a list of simple, ingredient-based recipe suggestions on the user’s main dashboard.
+
+- **Version B (Goal-Oriented Suggestions):** Provides advanced AI recipe suggestions tailored to users’ nutritional goals (e.g., calorie targets, macronutrient ratios) and dietary restrictions (e.g., low-carb, vegan).
+   - **Design Work:** Users can see why each recipe was suggested, such as “High-protein option based on your goal” or “Low-carb, aligns with your dietary restriction.”
+   - **Mockup:** Shows a personalized suggestions tab in the app’s recipe section, with tags explaining each recipe’s alignment with user goals.
+
+Through this experiment, we aim to determine if goal-oriented AI recipe suggestions drive greater engagement, recipe completion, and satisfaction by providing a more meaningful and relevant user experience.
+
