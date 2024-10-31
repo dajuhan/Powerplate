@@ -109,3 +109,35 @@ The current AI recipe suggestion system may lack sufficient personalization, off
 
 Through this experiment, we aim to determine if goal-oriented AI recipe suggestions drive greater engagement, recipe completion, and satisfaction by providing a more meaningful and relevant user experience.
 
+
+
+## A/B US2 Login Page: 
+Google Login Button Placement - Homepage vs. Splash Screen
+
+- **User Story Number:** US1 (User Login)
+- **Metrics:** Success Rate, Time to Login, User Satisfaction (HEART Metrics: Happiness, Engagement, Task Success)
+
+- **Hypothesis:** Placing the "Login with Google" button prominently on the splash screen instead of within the homepage login form will reduce friction, enabling faster, more intuitive access and increasing successful logins by minimizing unnecessary steps.
+
+- **Problem Statement and Impact:**  
+  A significant percentage of users delay login due to the additional navigation required to find the login option within the homepage. Simplifying access to the login function could enhance task success rates, especially among users who are already logged into Google. This test aims to measure whether improved placement reduces login times and increases user satisfaction.
+
+- **Experiment Setup:**  
+  Using Firebase, we’ll split users evenly into two groups:
+  - **Group A:** Access the Google Login option on the splash screen upon opening the app.
+  - **Group B:** Access the Google Login option by navigating to the login form on the homepage.
+  
+  **Tracking Events:**  
+  - Track `google_login_click` to measure click rate differences.
+  - Track time from app open to successful login (event: `login_success`) to evaluate task completion speed.
+  - Track time taken to display the homepage with protein intake data (event: `homepage_load_complete`) to ensure the user experience meets the under-2-second goal.
+  
+  All users will have an equal chance of being directed to either variation, with progress tracked through Firebase Analytics. Results will be segmented by first-time users and returning users.
+
+- **Variations:**  
+  - **Variation A (Splash Screen Placement):** The "Login with Google" button appears directly on the app’s splash screen for immediate login upon opening the app.
+  - **Variation B (Homepage Login Form):** The "Login with Google" button is accessible only by navigating to the homepage login form.
+  
+  Include mockups of both variations to illustrate the button placements. The design should maintain the app's visual consistency, emphasizing ease of access in Variation A.
+
+
