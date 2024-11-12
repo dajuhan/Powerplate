@@ -5,6 +5,12 @@ https://docs.google.com/presentation/d/1zfIgTc1mLbwK8nkI4nfyfbew10gR4e_37U9prV0b
 
 ------------------------------------------------------------------------------------------------------------------
 
+### US3: Backend Setup:
+https://docs.google.com/presentation/d/1L5fVRh1VkNfDM0dvB49PxXiBR9pTBMZg6B167H83YFU/edit?usp=sharing
+
+------------------------------------------------------------------------------------------------------------------
+
+
 ### US4: Golden Path Test Cases: 
 https://docs.google.com/presentation/d/1_WtmwND5KGtU96S6U5RfsC4AwwiOZ3c_Q6d7ZhCifPw/edit#slide=id.p
 
