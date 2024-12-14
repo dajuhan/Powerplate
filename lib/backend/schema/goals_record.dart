@@ -35,11 +35,17 @@ class GoalsRecord extends FirestoreRecord {
   DocumentReference? get user => _user;
   bool hasUser() => _user != null;
 
+  // "calories" field.
+  int? _calories;
+  int get calories => _calories ?? 0;
+  bool hasCalories() => _calories != null;
+
   void _initializeFields() {
     _protein = castToType<int>(snapshotData['protein']);
     _carbohydrates = castToType<int>(snapshotData['carbohydrates']);
     _fats = castToType<int>(snapshotData['fats']);
     _user = snapshotData['user'] as DocumentReference?;
+    _calories = castToType<int>(snapshotData['calories']);
   }
 
   static CollectionReference get collection =>
@@ -80,6 +86,7 @@ Map<String, dynamic> createGoalsRecordData({
   int? carbohydrates,
   int? fats,
   DocumentReference? user,
+  int? calories,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -87,6 +94,7 @@ Map<String, dynamic> createGoalsRecordData({
       'carbohydrates': carbohydrates,
       'fats': fats,
       'user': user,
+      'calories': calories,
     }.withoutNulls,
   );
 
@@ -101,12 +109,13 @@ class GoalsRecordDocumentEquality implements Equality<GoalsRecord> {
     return e1?.protein == e2?.protein &&
         e1?.carbohydrates == e2?.carbohydrates &&
         e1?.fats == e2?.fats &&
-        e1?.user == e2?.user;
+        e1?.user == e2?.user &&
+        e1?.calories == e2?.calories;
   }
 
   @override
   int hash(GoalsRecord? e) => const ListEquality()
-      .hash([e?.protein, e?.carbohydrates, e?.fats, e?.user]);
+      .hash([e?.protein, e?.carbohydrates, e?.fats, e?.user, e?.calories]);
 
   @override
   bool isValidKey(Object? o) => o is GoalsRecord;
