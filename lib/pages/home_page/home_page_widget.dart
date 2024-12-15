@@ -166,19 +166,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                              fontFamily: 'Inter',
-                                              color: const Color(0xFF8377D1),
-                                              fontSize: 20.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.bold,
-                                              shadows: [
-                                                const Shadow(
-                                                  color: Color(0xFF8377D1),
-                                                  offset: Offset(2.0, 2.0),
-                                                  blurRadius: 3.0,
-                                                )
-                                              ],
-                                            ),
+                                                  fontFamily: 'Inter',
+                                                  color: const Color(0xFF8377D1),
+                                                  fontSize: 20.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                           ),
                                         ),
                                         Padding(
@@ -377,6 +370,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     child: AuthUserStreamWidget(
                                                       builder: (context) =>
                                                           Text(
+                                                        key: const ValueKey(
+                                                            'Text_thac'),
                                                         valueOrDefault(
                                                             currentUserDocument
                                                                 ?.preferredMeasurement,
@@ -412,23 +407,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             child: Text(
                                               'Carbs',
                                               textAlign: TextAlign.start,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                fontFamily: 'Inter',
-                                                color: const Color(0xFF8377D1),
-                                                fontSize: 20.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                                shadows: [
-                                                  const Shadow(
-                                                    color: Color(0xFF8377D1),
-                                                    offset: Offset(2.0, 2.0),
-                                                    blurRadius: 3.0,
-                                                  )
-                                                ],
-                                              ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFF8377D1),
+                                                    fontSize: 20.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                             ),
                                           ),
                                         ),
@@ -641,6 +629,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     child: AuthUserStreamWidget(
                                                       builder: (context) =>
                                                           Text(
+                                                        key: const ValueKey(
+                                                            'Text_hy9z'),
                                                         valueOrDefault(
                                                             currentUserDocument
                                                                 ?.preferredMeasurement,
@@ -676,23 +666,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             child: Text(
                                               'Fats',
                                               textAlign: TextAlign.start,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                fontFamily: 'Inter',
-                                                color: const Color(0xFF8377D1),
-                                                fontSize: 20.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                                shadows: [
-                                                  const Shadow(
-                                                    color: Color(0xFF8377D1),
-                                                    offset: Offset(2.0, 2.0),
-                                                    blurRadius: 3.0,
-                                                  )
-                                                ],
-                                              ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFF8377D1),
+                                                    fontSize: 20.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                             ),
                                           ),
                                         ),
@@ -931,23 +914,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             child: Text(
                                               'Calories',
                                               textAlign: TextAlign.start,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                fontFamily: 'Inter',
-                                                color: const Color(0xFF8377D1),
-                                                fontSize: 20.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                                shadows: [
-                                                  const Shadow(
-                                                    color: Color(0xFF8377D1),
-                                                    offset: Offset(2.0, 2.0),
-                                                    blurRadius: 3.0,
-                                                  )
-                                                ],
-                                              ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFF8377D1),
+                                                    fontSize: 20.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                             ),
                                           ),
                                         ),

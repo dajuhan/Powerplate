@@ -60,6 +60,24 @@ void main() async {
     await tester.tap(find.byKey(ValueKey('Forgot_button_2nqi')));
     expect(find.text('Enter Email To Reset Password'), findsWidgets);
   });
+
+  testWidgets('US4 Golden Path', (WidgetTester tester) async {
+    _overrideOnError();
+
+    await tester.pumpWidget(ChangeNotifierProvider(
+      create: (context) => FFAppState(),
+      child: MyApp(),
+    ));
+
+    await tester.pumpAndSettle(Duration(milliseconds: 3000));
+    await tester.enterText(find.byKey(ValueKey('protein_field_a4ac')), '20\n');
+    await tester.enterText(find.byKey(ValueKey('carbs_field_g487')), '30');
+    await tester.pumpAndSettle(Duration(milliseconds: 3000));
+    expect(find.byKey(ValueKey('Text_thac')), findsOneWidget);
+    expect(find.byKey(ValueKey('Text_hy9z')), findsOneWidget);
+    expect(find.text('20'), findsOneWidget);
+    expect(find.text('30'), findsOneWidget);
+  });
 }
 
 // There are certain types of errors that can happen during tests but

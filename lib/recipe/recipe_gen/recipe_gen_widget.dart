@@ -137,9 +137,9 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                               child: Stack(
                                 children: [
                                   Align(
-                                    alignment: const AlignmentDirectional(-0.9, 0.0),
+                                    alignment: const AlignmentDirectional(-0.98, 0.0),
                                     child: SizedBox(
-                                      width: 85.0,
+                                      width: 100.0,
                                       child: TextFormField(
                                         controller:
                                             _model.proteinValueTextController,
@@ -148,14 +148,14 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelText: 'Protein',
+                                          labelText: 'Proteins',
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Inter',
                                                     color: const Color(0xFF8377D1),
-                                                    fontSize: 20.0,
+                                                    fontSize: 15.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -219,9 +219,10 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              lineHeight: 2.0,
                                             ),
                                         textAlign: TextAlign.center,
-                                        maxLines: 2,
+                                        maxLines: null,
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryText,
@@ -232,9 +233,9 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(-0.31, 0.0),
+                                    alignment: const AlignmentDirectional(-0.33, 0.0),
                                     child: SizedBox(
-                                      width: 85.0,
+                                      width: 100.0,
                                       child: TextFormField(
                                         controller:
                                             _model.carbsValueTextController,
@@ -243,14 +244,14 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelText: 'Carbs ',
+                                          labelText: '  Carbs ',
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Inter',
                                                     color: const Color(0xFF8377D1),
-                                                    fontSize: 20.0,
+                                                    fontSize: 18.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -311,9 +312,10 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              lineHeight: 2.0,
                                             ),
                                         textAlign: TextAlign.center,
-                                        maxLines: 2,
+                                        maxLines: null,
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryText,
@@ -324,9 +326,9 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.28, 0.0),
+                                    alignment: const AlignmentDirectional(0.33, 0.0),
                                     child: SizedBox(
-                                      width: 85.0,
+                                      width: 100.0,
                                       child: TextFormField(
                                         controller:
                                             _model.fatsValueTextController,
@@ -335,14 +337,14 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelText: 'Fats',
+                                          labelText: '    Fats',
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Inter',
                                                     color: const Color(0xFF8377D1),
-                                                    fontSize: 20.0,
+                                                    fontSize: 18.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -352,6 +354,7 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Inter',
+                                                    fontSize: 17.0,
                                                     letterSpacing: 0.0,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
@@ -403,9 +406,10 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              lineHeight: 2.0,
                                             ),
                                         textAlign: TextAlign.center,
-                                        maxLines: 2,
+                                        maxLines: null,
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryText,
@@ -416,9 +420,9 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.89, 0.0),
+                                    alignment: const AlignmentDirectional(0.98, 0.0),
                                     child: SizedBox(
-                                      width: 85.0,
+                                      width: 100.0,
                                       child: TextFormField(
                                         controller:
                                             _model.caloriesValueTextController,
@@ -435,7 +439,7 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                                   .override(
                                                     fontFamily: 'Inter',
                                                     color: const Color(0xFF8377D1),
-                                                    fontSize: 20.0,
+                                                    fontSize: 15.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -496,9 +500,10 @@ class _RecipeGenWidgetState extends State<RecipeGenWidget> {
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              lineHeight: 2.0,
                                             ),
                                         textAlign: TextAlign.center,
-                                        maxLines: 2,
+                                        maxLines: null,
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryText,

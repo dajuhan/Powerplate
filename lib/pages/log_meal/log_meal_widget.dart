@@ -204,6 +204,7 @@ class _LogMealWidgetState extends State<LogMealWidget> {
                               SizedBox(
                                 width: double.infinity,
                                 child: TextFormField(
+                                  key: const ValueKey('protein_field_a4ac'),
                                   controller: _model.proteinFieldTextController,
                                   focusNode: _model.proteinFieldFocusNode,
                                   autofocus: false,
@@ -287,6 +288,7 @@ class _LogMealWidgetState extends State<LogMealWidget> {
                               SizedBox(
                                 width: double.infinity,
                                 child: TextFormField(
+                                  key: const ValueKey('carbs_field_g487'),
                                   controller: _model.carbsFieldTextController,
                                   focusNode: _model.carbsFieldFocusNode,
                                   autofocus: false,
