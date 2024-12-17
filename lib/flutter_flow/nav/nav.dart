@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
+import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -67,18 +68,20 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
-GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
+GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
+    GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const GoldenPathWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? entryPage ?? const NavBarPage() : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const GoldenPathWidget() : const LoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? entryPage ?? const NavBarPage()
+              : const LoginWidget(),
         ),
         FFRoute(
           name: 'AccountCreation',
@@ -91,14 +94,120 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
-          name: 'goldenPath',
-          path: '/goldenPath',
-          builder: (context, params) => const GoldenPathWidget(),
+          name: 'HomePage',
+          path: '/homePage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'HomePage')
+              : HomePageWidget(
+                  navbar: params.getParam(
+                    'navbar',
+                    ParamType.int,
+                  ),
+                ),
         ),
         FFRoute(
           name: 'GoalSetting',
           path: '/goalSetting',
           builder: (context, params) => const GoalSettingWidget(),
+        ),
+        FFRoute(
+          name: 'ResetPassword',
+          path: '/resetPassword',
+          builder: (context, params) => const ResetPasswordWidget(),
+        ),
+        FFRoute(
+          name: 'LogMeal',
+          path: '/logMeal',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'LogMeal')
+              : const LogMealWidget(),
+        ),
+        FFRoute(
+          name: 'NPSSurvey',
+          path: '/nPSSurvey',
+          builder: (context, params) => const NPSSurveyWidget(),
+        ),
+        FFRoute(
+          name: 'Calendar',
+          path: '/calendar',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'Calendar')
+              : CalendarWidget(
+                  date: params.getParam(
+                    'date',
+                    ParamType.String,
+                  ),
+                ),
+        ),
+        FFRoute(
+          name: 'HistoryPage',
+          path: '/historyPage',
+          builder: (context, params) => HistoryPageWidget(
+            date: params.getParam(
+              'date',
+              ParamType.DateTime,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'Settings',
+          path: '/settings',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'Settings')
+              : const SettingsWidget(),
+        ),
+        FFRoute(
+          name: 'RecipeGen',
+          path: '/recipeGen',
+          builder: (context, params) => const RecipeGenWidget(),
+        ),
+        FFRoute(
+          name: 'MealHistory',
+          path: '/mealHistory',
+          builder: (context, params) => MealHistoryWidget(
+            meal: params.getParam(
+              'meal',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['meal'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'ModifyMeal',
+          path: '/modifyMeal',
+          builder: (context, params) => ModifyMealWidget(
+            meal: params.getParam(
+              'meal',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['meal'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'RecipeInfo',
+          path: '/recipeInfo',
+          builder: (context, params) => RecipeInfoWidget(
+            recipe: params.getParam(
+              'recipe',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['recipe'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'RecipeStorage',
+          path: '/recipeStorage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'RecipeStorage')
+              : const RecipeStorageWidget(),
+        ),
+        FFRoute(
+          name: 'UpdateGoals',
+          path: '/updateGoals',
+          builder: (context, params) => const UpdateGoalsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -35,11 +35,6 @@ class UsersRecord extends FirestoreRecord {
   int get age => _age ?? 0;
   bool hasAge() => _age != null;
 
-  // "desiredUsage" field.
-  String? _desiredUsage;
-  String get desiredUsage => _desiredUsage ?? '';
-  bool hasDesiredUsage() => _desiredUsage != null;
-
   // "email" field.
   String? _email;
   String get email => _email ?? '';
@@ -49,6 +44,16 @@ class UsersRecord extends FirestoreRecord {
   String? _uid;
   String get uid => _uid ?? '';
   bool hasUid() => _uid != null;
+
+  // "rec_rank" field.
+  String? _recRank;
+  String get recRank => _recRank ?? '';
+  bool hasRecRank() => _recRank != null;
+
+  // "preferred_measurement" field.
+  String? _preferredMeasurement;
+  String get preferredMeasurement => _preferredMeasurement ?? '';
+  bool hasPreferredMeasurement() => _preferredMeasurement != null;
 
   // "phone_number" field.
   String? _phoneNumber;
@@ -60,9 +65,10 @@ class UsersRecord extends FirestoreRecord {
     _photoUrl = snapshotData['photo_url'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
     _age = castToType<int>(snapshotData['age']);
-    _desiredUsage = snapshotData['desiredUsage'] as String?;
     _email = snapshotData['email'] as String?;
     _uid = snapshotData['uid'] as String?;
+    _recRank = snapshotData['rec_rank'] as String?;
+    _preferredMeasurement = snapshotData['preferred_measurement'] as String?;
     _phoneNumber = snapshotData['phone_number'] as String?;
   }
 
@@ -104,9 +110,10 @@ Map<String, dynamic> createUsersRecordData({
   String? photoUrl,
   DateTime? createdTime,
   int? age,
-  String? desiredUsage,
   String? email,
   String? uid,
+  String? recRank,
+  String? preferredMeasurement,
   String? phoneNumber,
 }) {
   final firestoreData = mapToFirestore(
@@ -115,9 +122,10 @@ Map<String, dynamic> createUsersRecordData({
       'photo_url': photoUrl,
       'created_time': createdTime,
       'age': age,
-      'desiredUsage': desiredUsage,
       'email': email,
       'uid': uid,
+      'rec_rank': recRank,
+      'preferred_measurement': preferredMeasurement,
       'phone_number': phoneNumber,
     }.withoutNulls,
   );
@@ -134,9 +142,10 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.photoUrl == e2?.photoUrl &&
         e1?.createdTime == e2?.createdTime &&
         e1?.age == e2?.age &&
-        e1?.desiredUsage == e2?.desiredUsage &&
         e1?.email == e2?.email &&
         e1?.uid == e2?.uid &&
+        e1?.recRank == e2?.recRank &&
+        e1?.preferredMeasurement == e2?.preferredMeasurement &&
         e1?.phoneNumber == e2?.phoneNumber;
   }
 
@@ -146,9 +155,10 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.photoUrl,
         e?.createdTime,
         e?.age,
-        e?.desiredUsage,
         e?.email,
         e?.uid,
+        e?.recRank,
+        e?.preferredMeasurement,
         e?.phoneNumber
       ]);
 
