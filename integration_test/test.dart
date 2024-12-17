@@ -34,17 +34,17 @@ void main() async {
 
     await tester.pumpWidget(ChangeNotifierProvider(
       create: (context) => FFAppState(),
-      child: MyApp(),
+      child: const MyApp(),
     ));
 
     await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('Login-email_suq5')),
+        'matthew_con123@uri.edu');
     await tester.enterText(
-        find.byKey(ValueKey('Login-email_suq5')), 'matthew_con123@uri.edu');
-    await tester.enterText(
-        find.byKey(ValueKey('login-password_z8vp')), 'password');
-    await tester.tap(find.byKey(ValueKey('Login-Button_e02q')));
+        find.byKey(const ValueKey('login-password_z8vp')), 'password');
+    await tester.tap(find.byKey(const ValueKey('Login-Button_e02q')));
     await tester.pumpAndSettle();
-    expect(find.byKey(ValueKey('Protein_v2s1')), findsWidgets);
+    expect(find.byKey(const ValueKey('Protein_v2s1')), findsWidgets);
   });
 
   testWidgets('US2 User Login Reset Password', (WidgetTester tester) async {
@@ -52,12 +52,12 @@ void main() async {
 
     await tester.pumpWidget(ChangeNotifierProvider(
       create: (context) => FFAppState(),
-      child: MyApp(
+      child: const MyApp(
         entryPage: LoginWidget(),
       ),
     ));
 
-    await tester.tap(find.byKey(ValueKey('Forgot_button_2nqi')));
+    await tester.tap(find.byKey(const ValueKey('Forgot_button_2nqi')));
     expect(find.text('Enter Email To Reset Password'), findsWidgets);
   });
 
@@ -66,15 +66,17 @@ void main() async {
 
     await tester.pumpWidget(ChangeNotifierProvider(
       create: (context) => FFAppState(),
-      child: MyApp(),
+      child: const MyApp(),
     ));
 
-    await tester.pumpAndSettle(Duration(milliseconds: 3000));
-    await tester.enterText(find.byKey(ValueKey('protein_field_a4ac')), '20\n');
-    await tester.enterText(find.byKey(ValueKey('carbs_field_g487')), '30');
-    await tester.pumpAndSettle(Duration(milliseconds: 3000));
-    expect(find.byKey(ValueKey('Text_thac')), findsOneWidget);
-    expect(find.byKey(ValueKey('Text_hy9z')), findsOneWidget);
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    await tester.enterText(
+        find.byKey(const ValueKey('protein_field_a4ac')), '20\n');
+    await tester.enterText(
+        find.byKey(const ValueKey('carbs_field_g487')), '30');
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    expect(find.byKey(const ValueKey('Text_thac')), findsOneWidget);
+    expect(find.byKey(const ValueKey('Text_hy9z')), findsOneWidget);
     expect(find.text('20'), findsOneWidget);
     expect(find.text('30'), findsOneWidget);
   });
