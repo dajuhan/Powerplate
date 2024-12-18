@@ -25,6 +25,8 @@ https://docs.google.com/presentation/d/1eFjERRBkEoh_N5bxZTFGfOFqIlDbHUfOqXCRjC7f
 
 -------------------------------------------------------------------------------------------------------------------
 
+### US6: Settings Test Cases: 
+https://docs.google.com/presentation/d/1ntxZN2PIFUfOmG1XuIZsZvXchz52ltU8Y0WgQicdPCk/edit?usp=sharing
 
-
+-------------------------------------------------------------------------------------------------------------------
 
