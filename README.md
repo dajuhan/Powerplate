@@ -1,6 +1,6 @@
 # PowerPlate
 
-A new Flutter project.
+Learn more about our app here: [PowerPlate][https://sites.google.com/view/powerplate-app/overview]
 
 ## Getting Started
 
