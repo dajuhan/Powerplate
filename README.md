@@ -1,6 +1,6 @@
 # PowerPlate
 
-Learn more about our app here!: [https://sites.google.com/view/powerplate-app/overview
+Learn more about our app here!: https://sites.google.com/view/powerplate-app/overview
 
 ## Getting Started
 
